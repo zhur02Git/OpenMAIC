@@ -6,7 +6,7 @@
     "loading": "Loading..."
   },
   "home": {
-    "slogan": "Generative Learning in Multi-Agent Interactive Classroom",
+    "slogan": "welcome to RuiAI advisory",
     "greetingWithName": "Hi, {{name}}"
   },
   "toolbar": {
