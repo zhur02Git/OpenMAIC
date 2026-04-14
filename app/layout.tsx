@@ -20,7 +20,7 @@ const inter = localFont({
 export const metadata: Metadata = {
   title: 'OpenMAIC',
   description:
-    'The open-source AI interactive classroom. Upload a PDF to instantly generate an immersive, multi-agent learning experience.',
+    'Rui-AI advisory to help you learn industrial knowledge with AI agents. 通过与AI智能体的互动，轻松学习和掌握工业相关的知识和技能。',
 };
 
 export default function RootLayout({

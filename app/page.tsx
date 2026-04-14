@@ -467,7 +467,7 @@ function HomePage() {
           className="text-sm text-muted-foreground/60 mb-8"
         >
           {t('home.slogan')}
-        <span className="text-sm text-white/60 mt-2">
+        <span className="block text-sm text-white/60 mt-2">
   欢迎来到 RuiAI 工业AI学习平台
 </span>
         </motion.p>
@@ -642,7 +642,7 @@ function HomePage() {
 
       {/* Footer — flows with content, at the very end */}
       <div className="mt-auto pt-12 pb-4 text-center text-xs text-muted-foreground/40">
-        OpenMAIC Open Source Project
+        Rui-AI advisory
       </div>
     </div>
   );
