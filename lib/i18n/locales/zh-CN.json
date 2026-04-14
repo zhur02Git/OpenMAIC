@@ -7,7 +7,7 @@
   },
   "home": {
     "slogan": "AI驱动的工业学习平台 — RuiAI Advisory",
-    "greetingWithName": "嗨，{{name}}"
+    "greetingWithName": "hallo，{{name}}"
   },
   "toolbar": {
     "languageHint": "课程将以此语言生成",
