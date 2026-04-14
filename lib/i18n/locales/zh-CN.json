@@ -370,7 +370,7 @@
     "selectedAgents": "选中的智能体",
     "required": "必选",
     "agentNames": {
-      "default-1": "AI教师",
+      "default-1": "工业AI顾问",
       "default-2": "AI助教",
       "default-3": "显眼包",
       "default-4": "好奇宝宝",
@@ -383,7 +383,7 @@
       "student": "学生"
     },
     "agentDescriptions": {
-      "default-1": "主讲教师，清晰有条理地讲解知识",
+      "default-1": "专注工业与制造业的AI顾问，擅长供应链、精益生产和工厂数字化转型",
       "default-2": "辅助讲解，帮助同学理解重点",
       "default-3": "活跃气氛，用幽默让课堂更有趣",
       "default-4": "充满好奇心，总爱追问为什么",

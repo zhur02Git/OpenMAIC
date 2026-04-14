@@ -467,9 +467,9 @@ function HomePage() {
           className="text-sm text-muted-foreground/60 mb-8"
         >
           {t('home.slogan')}
-          <p className="text-sm text-white/60 mt-2">
+        <span className="text-sm text-white/60 mt-2">
   欢迎来到 RuiAI 工业AI学习平台
-</p>
+</span>
         </motion.p>
 
         {/* ── Unified input area ── */}
