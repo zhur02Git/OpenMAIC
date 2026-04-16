@@ -1,5 +1,5 @@
 'use client';
-
+import { calcEfficiency, getRiskLevel } from '@/lib/utils/industrial'
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
@@ -239,6 +239,8 @@ function HomePage() {
 
   const handleGenerate = async () => {
     // Validate setup before proceeding
+    console.log(calcEfficiency(850, 1000))  // 应该输出 85
+console.log(getRiskLevel(85))           // 应该输出 'low'
     if (!currentModelId) {
       showSetupToast(
         <BotOff className="size-4.5 text-amber-600 dark:text-amber-400" />,
