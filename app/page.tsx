@@ -1,6 +1,5 @@
 'use client';
 import { IndustrialCard } from '@/components/industrial/IndustrialCard'
-import { calcEfficiency, getRiskLevel, formatIndustrialReport } from '@/lib/utils/industrial'
 import { EquipmentSearch } from '@/components/industrial/EquipmentSearch'
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -241,12 +240,7 @@ function HomePage() {
 
   const handleGenerate = async () => {
     // Validate setup before proceeding
-const testData = [
-  { name: "车床A", efficiency: 85, status: "running" },
-  { name: "铣床B", efficiency: 45, status: "maintenance" },
-  { name: "钻床C", efficiency: 92, status: "running" },
-]
-console.log(formatIndustrialReport(testData))
+
     if (!currentModelId) {
       showSetupToast(
         <BotOff className="size-4.5 text-amber-600 dark:text-amber-400" />,
