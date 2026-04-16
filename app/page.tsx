@@ -1,5 +1,7 @@
 'use client';
-import { calcEfficiency, getRiskLevel } from '@/lib/utils/industrial'
+import { IndustrialCard } from '@/components/industrial/IndustrialCard'
+import { calcEfficiency, getRiskLevel, formatIndustrialReport } from '@/lib/utils/industrial'
+import { EquipmentSearch } from '@/components/industrial/EquipmentSearch'
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
@@ -239,8 +241,12 @@ function HomePage() {
 
   const handleGenerate = async () => {
     // Validate setup before proceeding
-    console.log(calcEfficiency(850, 1000))  // 应该输出 85
-console.log(getRiskLevel(85))           // 应该输出 'low'
+const testData = [
+  { name: "车床A", efficiency: 85, status: "running" },
+  { name: "铣床B", efficiency: 45, status: "maintenance" },
+  { name: "钻床C", efficiency: 92, status: "running" },
+]
+console.log(formatIndustrialReport(testData))
     if (!currentModelId) {
       showSetupToast(
         <BotOff className="size-4.5 text-amber-600 dark:text-amber-400" />,
@@ -645,6 +651,12 @@ console.log(getRiskLevel(85))           // 应该输出 'low'
       {/* Footer — flows with content, at the very end */}
       <div className="mt-auto pt-12 pb-4 text-center text-xs text-muted-foreground/40">
         Rui-AI advisory
+        <div className="flex gap-4 mt-4">
+  <IndustrialCard name="车床A" status="running" efficiency={85} />
+  <IndustrialCard name="铣床B" status="maintenance" efficiency={45} />
+  <IndustrialCard name="钻床C" status="stopped" efficiency={0} />
+  <EquipmentSearch />
+</div>
       </div>
     </div>
   );
